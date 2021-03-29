@@ -1,8 +1,8 @@
 # mathbot
 
-Say I am an online casino & there are winners and losers every week that need to be paid out on mondays. The casino generates an a data sheet with the winners & their winnings, & losers & their losses.
+Say you are an online casino & there are winners and losers every week that need to be paid out on mondays. The casino generates an a data sheet with the winners & their winnings, & losers & their losses.
 
-Every Monday we need to figure out what losers need to pay what winners.
+Every Monday you need to figure out what losers need to pay what winners.
 
 You need to use the data given to you to figure out what losers need to pay the winners & how much they need to pay...with python. 
 
