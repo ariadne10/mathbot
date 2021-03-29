@@ -1,13 +1,15 @@
-# Small Sample size to figure out math bot
+# Losers
 
 import pandas as pd
-data = [['ryan', 10], ['collin', 11], ['charlie', 14]]
+data = [['mike', 10], ['sarah', 11], ['rob', 14]]
 df = pd.DataFrame(data, columns = ['Name', 'This Week'])
 
 print(df)
 
+# Winners
+
 import pandas as pd
-data = [['zane', 21], ['austin', 14]]
+data = [['alex', 21], ['john', 14]]
 df = pd.DataFrame(data, columns = ['Name', 'This Week'])
 
 print(df)
