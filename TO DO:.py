@@ -30,8 +30,10 @@ for sheet_name in worksheets:
     print(df)
 
 # Add losers values to satisfy winners values starting from top of each list
-    sum_row = df.sum(axis=0)
-    print(sum_row)
+    column_number = 2
+    total = df.iloc[:, column_number - 1:column_number].sum()
+    print(total)
+
 
 # Only show values that are greater than 25
     df = pd.read_excel(spreadsheet_file, sheet_name, header=1)
@@ -42,19 +44,23 @@ for sheet_name in worksheets:
     df = df.sort_values(by='THIS WEEK', ascending=False).head(70)
 
 # Weekly fees value are inserted into a row at the bottom of winners list
-    data = [{player: 'Fees', value: 5000}]
+    data = [{player: 'Fees', value: 800}]
     df.loc[99] = list(data[0].values())
 # Zane's profit value is inserted into a row at the bottom of winners list
-    data = [{player: 'Zane', value: 5000}]
+    data = [{player: 'Zane', value: 3000}]
     df.loc[100] = list(data[0].values())
 # Austin's profit value is inserted into a row at the bottom of winners list
-    data = [{player: 'Austin', value: 5000}]
+    data = [{player: 'Austin', value: 3000}]
     df.loc[101] = list(data[0].values())
 # Ryan's profit value is inserted into a row at the bottom of winners list
-    data = [{player: 'Ryan', value: 5000}]
+    data = [{player: 'Ryan', value: 3000}]
     df.loc[102] = list(data[0].values())
 
     print(df)
+
+    column_number = 2
+    total = df.iloc[:, column_number - 1:column_number].sum()
+    print(total)
 
 # If losers value is greater than the winner value that it needs to satisfy then it copies that number
 
