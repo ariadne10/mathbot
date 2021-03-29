@@ -1,7 +1,7 @@
 # Losers
 
 import pandas as pd
-data = [['mike', 10], ['sarah', 12], ['rob', 13]]
+data = [['mike', 4], ['jake', 6], ['sarah', 12], ['rob', 13]]
 df = pd.DataFrame(data, columns = ['Name', 'This Week'])
 
 print(df)
