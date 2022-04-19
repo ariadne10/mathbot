@@ -46,14 +46,14 @@ for sheet_name in worksheets:
 # Weekly fees value are inserted into a row at the bottom of winners list
     data = [{player: 'Fees', value: 800}]
     df.loc[99] = list(data[0].values())
-# Zane's profit value is inserted into a row at the bottom of winners list
-    data = [{player: 'Zane', value: 3000}]
+# greg profit value is inserted into a row at the bottom of winners list
+    data = [{player: 'greg', value: 3000}]
     df.loc[100] = list(data[0].values())
-# Austin's profit value is inserted into a row at the bottom of winners list
-    data = [{player: 'Austin', value: 3000}]
+# steve profit value is inserted into a row at the bottom of winners list
+    data = [{player: 'steve', value: 3000}]
     df.loc[101] = list(data[0].values())
-# Ryan's profit value is inserted into a row at the bottom of winners list
-    data = [{player: 'Ryan', value: 3000}]
+# mike profit value is inserted into a row at the bottom of winners list
+    data = [{player: 'mike', value: 3000}]
     df.loc[102] = list(data[0].values())
 
     print(df)
